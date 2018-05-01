@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+
+  <title>Bootstrap Fitness</title>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#about">About</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="#trainers">Trainers</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#services">Bootstrap Services</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#services">Landing</a>
+      </li>
+    </ul>
+  </div>
+
+  <a class="navbar-brand" href="#">Bootstrap Fitness & Rehab</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+</nav>
+<div class="jumbotron jumbotron-fluid bg-warning text-black">
+  <div class="container text-sm-center pt-5">
+    <h3 class="display-2"></h3>
+    <p class="lead">A State-the-Art Training and Therapy Center</p>
+    <div class="btn-group" role="group" aria-label="Basic example">
+      <a type="button" class="btn btn-dark btn-lg" href="#speakers">Trainers</a>
+      <a type="button" class="btn btn-secondary btn-lg" href="#services">Bootstrap Services</a>
+    </div>
+  </div>
+</div>
+
+<div id="about" class="container pt-4">
+  <div class="row">
+    <div class="col-sm">
+      <h3 class="mt-5 mb-4">About BSFR</h3>
+      <img class="mb-1 rounded img-fluid" src="IMG_3185.JPG" alt="St. Louis">
+      <p>Bootstrap Fitness & Rehab is the leading, all encompassing training facility in St. Louis.</p>
+      <p>Explore the future of strength and conditioning with a lineup of the industry best personal trainers. Discover new techniques to advance your fitness level whether you're a beginner or a veteran.</p>
+      <p>We cater to all shapes and sizes from all walks of life.  We address weight-loss, sports performance training, body building/appearance training, and rehabilitation.</p>
+    </div>
+    <div class="col-sm">
+      <h3 class="mt-5 mb-4">Expert Trainers</h3>
+      <p>Our expert trainers are experienced, educated, and hold multiple industry standard certifications: C-PT, ATC, CSCS, ACSM, Certified Dietician, Functional Pattern Certified, Postural Restoration Certified, TRX Certified, AR Level 1-3 Certified, and Kettlebell Certified.</p>
+      <img class="mb-1 rounded img-fluid" th:src="@{/1up-sports.jpg}" alt="St. Louis" />
+      <p>Bootstrap Fitness Trainers are committed to being inclusive and welcoming for everybody.  They look forward to educating, energizing, and empowering clients each and everyday.</p>
+
+    </div>
+    <div class="col-sm">
+      <h3 class="mt-5 mb-4">Services we offer:</h3>
+      <ul>
+        <li>One-on-One Personal Training</li>
+        <li>Semi-Private Training</li>
+        <li>Group Fitness Classes</li>
+        <li>Speed & Agility Training</li>
+        <li>Plyometrics Training</li>
+        <li>Functional Strength Training</li>
+        <li>Athletic Training</li>
+        <li>Massage Therapy</li>
+        <li>Physical Therapy</li>
+        <li>Pre-Op/Post-Op Rehabilitation</li>
+        <li>Injury Prevention</li>
+        <li>Nutrition Consultation</li>
+      </ul>
+      <img class="mb-1 rounded img-fluid" th:src="@{/cyc-chelsea.jpg}" alt="St. Louis" />
+    </div>
+  </div>
+
+  <!--trainers-->
+  <h1 id="trainers" class="display-4 text-center my-3 text-muted">Trainers</h1>
+
+  <div class="row">
+    <div class="col-md-6 col-lg-4">
+      <div class="card">
+        <img class="card-img-top" th:src="@{/TheRock_images.jpg}" alt="Card image cap" />
+        <div class="card-block">
+          <h4 class="card-title">Brody "The Boulder" Jackson</h4>
+          <p class="card-text">Coach Brody is an ex-NFL player who later got certified as an Athletic Trainer. He is a teacher, a motivator, and a role model who is passionate about building the client's mind and body and connecting them to their soul through proper exercise and nutrition.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6 col-lg-4">
+      <div class="card">
+        <img class="card-img-top" th:src="@{/AOA310802.jpg}" alt="Card image cap" />
+        <div class="card-block">
+          <h4 class="card-title">Luna Snow</h4>
+          <p class="card-text">Coach Luna found her passion for fitness at a young age and has become one of the premeire fitness models in the area.  She is also a Certified Dietician, with a masters in dietetics and a Yoga/Pilates instructor.  She is excited to introduce people to the wonderful world of healthy, mindful nutrition.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6 col-lg-4">
+      <div class="card">
+        <img class="card-img-top" th:src="@{/cena-bench-press-1280.jpg}" alt="Card image cap" />
+        <div class="card-block">
+          <h4 class="card-title">Brock Banner</h4>
+          <p class="card-text">Coach Brock is a Certified Physical Therapist and Postural Restoration Certified.  He's also a teacher who strives to support clients in removing all movement disfunctions by learning proper exercise techniques and rehabilitation.</p>
+        </div>
+      </div></div>
+  </div>
+  <!--schedule -->
+  <h1 id="services" class="display-4 text-center my-3 text-muted">Bootstrap Services</h1>
+  <div class="list-group">
+    <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+      <div class="d-flex w-100 justify-content-between">
+        <h5 class="mb-1">Initial Evaluation/Post Evaluation</h5>
+        <span class="badge badge-default badge-pill bg-warning px-2 py-2 mt-2">Sign Up</span>
+      </div>
+      <p class="mb-1">Every client that trains at BSFR must go through an inital evaluation in order for the coaches to effectively design an individualized program.</p>
+    </a>
+    <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+      <div class="d-flex w-100 justify-content-between">
+        <h5 class="mb-1">One-on-One Personal Training/Semi-Private Training</h5>
+        <span class="badge badge-default badge-pill bg-warning px-2 py-2 mt-2">Sign Up</span>
+      </div>
+      <p class="mb-1">After an initial evaluation clients can take full advantage of training with a coach in a one on one basis or with up to four other peers.</p>
+    </a>
+    <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+      <div class="d-flex w-100 justify-content-between">
+        <h5 class="mb-1">Physical Therapy/Athletic Training</h5>
+        <span class="badge badge-default badge-pill bg-warning px-2 py-2 mt-2">Sign Up</span>
+      </div>
+      <p class="mb-1">Clients with a physician's script can attain full pre/post surgical and post injury rehabilitation through our therapy department.</p>
+    </a>
+    <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+      <div class="d-flex w-100 justify-content-between">
+        <h5 class="mb-1">Nutrition Consultation</h5>
+        <span class="badge badge-default badge-pill bg-warning px-2 py-2 mt-2">Sign Up</span>
+      </div>
+      <p class="mb-1">Clients will collaborate with our dietician in creating nutritional meal plans and behaviroal modification stategies in regards to their relationship with food.</p>
+    </a>
+    <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+      <div class="d-flex w-100 justify-content-between">
+        <h5 class="mb-1">Large Group Fitness Classes</h5>
+        <span class="badge badge-default badge-pill bg-warning px-2 py-2 mt-2">Sign Up</span>
+      </div>
+      <p class="mb-1">Our center offers multi-disciplined classes such as Hybrid Training, Pilates, Yoga, Barre, Spin, Tread, and TRX Training.</p>
+    </a>
+    <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+      <div class="d-flex w-100 justify-content-between">
+        <h5 class="mb-1">Athlete Acceleration Program</h5>
+        <span class="badge badge-default badge-pill bg-warning px-2 py-2 mt-2">Sign Up</span>
+      </div>
+      <p class="mb-1">This program is catered to athletes of all sports and includes specificity training in the major areas of athleticism: strength, speed and power, along with coordination and rythmic synchronization.</p>
+    </a>
+    <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+      <div class="d-flex w-100 justify-content-between">
+        <h5 class="mb-1">Massage Therapy</h5>
+        <span class="badge badge-default badge-pill bg-warning px-2 py-2 mt-2">Sign Up</span>
+      </div>
+      <p class="mb-1">As part of our recovery program we offer a total mind and body expereince with our massage therapy department.</p>
+    </a>
+  </div>
+
+  <!-- callout button -->
+  <button type="button" class="btn btn-outline-warning btn-lg d-block mx-auto my-5">Sign up now!</button>
+  <!-- signup form -->
+  <hr />
+  <div class="row py-4 text-muted">
+    <div class="col-md-6">
+      <p><strong>Location</strong></p>
+      <p>55 Smackdown Ave. St Louis, Missouri, 63390</p>
+      <p><strong>Hours of Operation</strong></p>
+      <p>Monday - Friday: 5:00AM - 9:00PM</p>
+      <p>Saturday - Sunday: 6:00AM - 4:00PM</p>
+      <p><strong>Contact Information</strong></p>
+      <p>314-740-1234</p>
+      <p>fitnesshelp@bootstrapfitnessandrehab.com</p>
+    </div>
+    <div class="col-md-6">
+      <p><strong>Sign up for our monthly newsletters for health tips and promotional discounts!</strong></p>
+      <div class="input-group">
+        <input type="text" class="form-control" placeholder="Email" />
+        <span class="input-group-btn">
+			<button class="btn btn-warning" type="button">Sign up</button>
+			</span>
+      </div>
+    </div>
+  </div>
+
+  <hr>
+  <!-- /signup form -->
+
+  <div class="row py-3">
+    <div class="col md-7">
+      <ul class="nav nav-pills">
+        <li class="nav-item">
+          <a class="nav-link btn-warning" href="#">Community</a>
+        </li>
+        <li class="nav-item dropdown btn-warning">
+          <a class="nav-link dropdown-toggle btn-warning" data-toggle="dropdown" href="#" role="button btn-warning" aria-haspopup="true" aria-expanded="false">Tracks</a>
+          <div class="dropdown-menu btn-warning">
+            <a class="dropdown-item btn-warning" href="#">Facebook</a>
+            <a class="dropdown-item btn-warning" href="#">Twiter</a>
+            <a class="dropdown-item btn-warning" href="#">Instagram</a>
+            <a class="dropdown-item btn-warning" href="#">LinkedIn</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="col md-5 text-md-right">
+      &copy; 2018 Bootstrap Fitness & Rehab.
+    </div>
+  </div>
+</div>
+
+
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>

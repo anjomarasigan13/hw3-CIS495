@@ -1,9 +1,11 @@
 package com.cloud.service;
 
+
 import com.cloud.model.Attendee;
 import com.cloud.repository.AttendeeRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
 
 @Service
 public class AttendeeService {
@@ -16,6 +18,7 @@ public class AttendeeService {
     }
 
     public Iterable<Attendee> getAttendee(){
+
         return attendeeRepository.findAll();
     }
 }

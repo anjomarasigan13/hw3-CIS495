@@ -19,8 +19,27 @@ import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 @Controller
 class RegistrationController {
 
+    @RequestMapping("/")
+    public String index(){
+        return "index";
+    }
+
+    @RequestMapping(value = "/register", method = RequestMethod.POST)
+    public String registerDetails(@ModelAttribute Attendee attendee, RedirectAttributes redirectAttributes)
+    {
+        attendeeService.addAttendee(attendee);
+        redirectAttributes.addFlashAttribute("flash", "Registered "+ attendee.getName() + " Details: " + attendee.getEmail() + ", " + attendee.getPhone());
+        return "redirect:/";
+    }
+
     @Autowired
     AttendeeService attendeeService;
+
+    @RequestMapping(value = "/landing", method = RequestMethod.GET)
+    public String myLanding(Model model) {
+        model.addAttribute("attendee", new Attendee());
+        return "landing";
+    }
 
 
     @RequestMapping(value = "/admin", method = RequestMethod.GET)
@@ -39,7 +58,7 @@ class RegistrationController {
     public String register(@ModelAttribute Attendee attendee, RedirectAttributes redirectAttributes)
     {
         attendeeService.addAttendee(attendee);
-        redirectAttributes.addFlashAttribute("flash", "Registered "+ attendee.getEmail());
+        redirectAttributes.addFlashAttribute("flash", "Registered "+ attendee.getEmail() + attendee.getName() + attendee.getPhone());
         return "redirect:/";
     }
 
